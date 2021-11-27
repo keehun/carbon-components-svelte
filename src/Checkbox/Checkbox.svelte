@@ -82,6 +82,7 @@
       class:bx--checkbox="{true}"
       on:change
       on:change="{() => {
+        if (readonly) { return; }
         checked = !checked;
       }}"
       on:blur
